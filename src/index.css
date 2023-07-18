@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    @apply scroll-smooth text-[14px] font-Poppins font-normal text-primary;
+}
+
+@layer components {
+    .btn_primary {
+        @apply px-16 py-6 rounded-full bg-red text-white font-medium text-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out;
+    }
+
+        .btn_secondary {
+            @apply px-16 py-6 rounded-full bg-primary text-white font-medium text-lg hover:bg-white hover:text-primary transition-all duration-300 ease-in-out dark:bg-red dark:text-white dark:hover:bg-white dark:hover:text-primary;
+        }
+
+    .container{
+        @apply mx-auto px-5;
+    }
+    a p, li a{
+        @apply hover:text-red
+    }
+}
+
+
