@@ -4,7 +4,7 @@ import { giftOne, giftTwo, giftThree, giftFour, giftFive } from "../assets/img";
 
 const Gift = () => {
   return (
-    <section>
+    <section id="gifts">
       <div className="container py-20">
         <div className="section_header mb-20">
           <h2 className="text-2xl font-semibold text-primary text-center dark:text-white">

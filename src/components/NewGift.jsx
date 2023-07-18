@@ -3,7 +3,7 @@ import { nGiftOne, nGiftTwo, nGiftThree } from "../assets/img";
 
 const NewGift = () => {
   return (
-    <section>
+    <section id="new">
       <div className="container py-20">
         <div className="section_header mb-20">
           <h2 className="text-2xl font-semibold text-primary text-center dark:text-white">

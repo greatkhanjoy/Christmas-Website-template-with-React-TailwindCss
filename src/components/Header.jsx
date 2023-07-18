@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { BsMoon, BsFillMoonFill, BsGrid } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -29,28 +28,27 @@ const Header = ({ mode }) => {
       <div className="container">
         <div className="flex justify-between h-[72px] items-center">
           <div className="logo">
-            <Link to="/">
-              {" "}
+            <a href="#">
               <img
                 src={darkMode ? logoWhite : logo}
                 alt="Logo"
                 className="object-contain"
               />
-            </Link>
+            </a>
           </div>
           <nav className="flex gap-11">
             <ul className="hidden md:flex items-center gap-11 text-lg font-medium dark:text-white">
               <li className="transition-color duration-200 hover:text-red">
-                <Link to="/">Home</Link>
+                <a href="#">Home</a>
               </li>
               <li className="transition-color duration-200 hover:text-red">
-                <Link to="/about">Celebrate</Link>
+                <a href="#celebrate">Celebrate</a>
               </li>
               <li className="transition-color duration-200 hover:text-red">
-                <Link to="/gifts">Gifts</Link>
+                <a href="#gifts">Gifts</a>
               </li>
               <li className="transition-color duration-200 hover:text-red">
-                <Link to="/new">New</Link>
+                <a href="#new">New</a>
               </li>
             </ul>
             <div className="flex text-lg gap-4 dark:text-white">
@@ -69,25 +67,37 @@ const Header = ({ mode }) => {
             }`}
           >
             <ul className="text-lg flex flex-col gap-4 items-center dark:text-white">
-              <li className="transition-color duration-200 hover:text-red">
-                <Link to="/" className="hover:text-red">
+              <li
+                onClick={toggleMenu}
+                className="transition-color duration-200 hover:text-red"
+              >
+                <a href="#" className="hover:text-red">
                   Home
-                </Link>
+                </a>
               </li>
-              <li className="transition-color duration-200 hover:text-red">
-                <Link to="/about" className="hover:text-red">
+              <li
+                onClick={toggleMenu}
+                className="transition-color duration-200 hover:text-red"
+              >
+                <a href="#celebrate" className="hover:text-red">
                   Celebrate
-                </Link>
+                </a>
               </li>
-              <li className="transition-color duration-200 hover:text-red">
-                <Link to="/gifts" className="hover:text-red">
+              <li
+                onClick={toggleMenu}
+                className="transition-color duration-200 hover:text-red"
+              >
+                <a href="#gifts" className="hover:text-red">
                   Gifts
-                </Link>
+                </a>
               </li>
-              <li className="transition-color duration-200 hover:text-red">
-                <Link to="/new" className="hover:text-red">
+              <li
+                onClick={toggleMenu}
+                className="transition-color duration-200 hover:text-red"
+              >
+                <a href="#new" className="hover:text-red">
                   New
-                </Link>
+                </a>
               </li>
             </ul>
             <button

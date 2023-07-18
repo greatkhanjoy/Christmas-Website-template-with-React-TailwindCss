@@ -2,7 +2,7 @@ import { celebrate } from "../assets/img";
 
 const Celebrate = () => {
   return (
-    <section>
+    <section id="celebrate">
       <div className="container py-20">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center">
           <div className="w-full flex flex-col gap-10 items-center text-center md:text-left md:items-start md:w-1/2">
